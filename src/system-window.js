@@ -26,7 +26,7 @@ function updateAccentColor (e, color) {
 
   const styleSheet = styleEl.sheet
   const variableRule = `:root { --accent: #${color}; }`
-  
+
   styleSheet.insertRule(variableRule, styleSheet.cssRules.length)
 }
 

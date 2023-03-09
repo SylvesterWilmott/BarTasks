@@ -513,7 +513,6 @@ function showPreferencesWindow () {
     if (accentColor) {
       preferencesWin.webContents.send('updateAccentColor', accentColor)
     } // theme.css handles fallback defaults
-    console.log(storedData);
     preferencesWin.webContents.send('loadPreferences', storedData)
   })
 
