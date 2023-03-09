@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../theme.css" />
+    <link rel="stylesheet" href="./welcome.css" />
+    <script type="module" src="./welcome.js"></script>
+    <script type="module" src="../system-window.js"></script>
+  </head>
+  <body class="disable-transitions">
+    <div class="container">
+        <div class="top">
+            <div class="icon">
+                <picture class="icon">
+                    <source srcset=" ic_app.png 1x, ic_app@2x.png 2x"/>
+                    <img src="ic_app.png" />
+                </picture>
+            </div>
+            <h1 data-string="APP_NAME"></h1>
+            <p data-string="APP_DESCRIPTION"></p>
+            <div class="toggle-group">
+                <div class="toggle-container">
+                    <input type="checkbox" id="pref_open_at_login">
+                    <div class="toggle-background"></div>
+                    <div class="toggle-inner-shadow"></div>
+                    <div class="toggle-knob"></div>
+                    <label for="pref_open_at_login"></label>
+                </div>
+                <label class="row-label" data-string="LOGIN_ITEM"></label>
+            </div>
+        </div>
+        <div class="bottom">
+            <button id="close_welcome_window" data-string="CONTINUE_BUTTON"></button>
+        </div>
+    </div>
+  </body>
+</html>

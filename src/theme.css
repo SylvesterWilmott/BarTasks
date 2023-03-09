@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --primary: rgba(0, 0, 0, 0.85);
+  --secondary: rgba(0, 0, 0, 0.55);
+  --tertiary: rgba(0, 0, 0, 0.35);
+  --tab-active: rgba(0, 0, 0, 0.05);
+  --stroke: rgba(0, 0, 0, 0.16);
+  --stroke-light: rgba(0, 0, 0, 0.07);
+  --stroke-heavy: rgba(0, 0, 0, 0.16);
+  --shadow: rgba(0, 0, 0, 0.1);
+  --surface-primary: rgba(0, 0, 0, 0.18);
+  --surface-secondary: rgba(255, 255, 255, 0.18);
+  --surface-tertiary: rgba(0, 0, 0, 0.02);
+  --toggle-knob: #ffffff;
+  --accent: #007AFF;
+  --button: #ffffff;
+  --button-active: rgba(255, 255, 255, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --primary: rgba(255, 255, 255, 0.85);
+    --secondary: rgba(255, 255, 255, 0.5);
+    --tertiary: rgba(255, 255, 255, 0.3);
+    --tab-active: rgba(255, 255, 255, 0.05);
+    --stroke: rgba(255, 255, 255, 0.16);
+    --stroke-light: rgba(255, 255, 255, 0.07);
+    --stroke-heavy: #000000;
+    --shadow: rgba(0, 0, 0, 0.25);
+    --surface-primary: #565656;
+    --surface-secondary: rgba(255, 255, 255, 0.06);
+    --surface-tertiary: rgba(255, 255, 255, 0.02);
+    --toggle-knob: #ffffff;
+    --accent: #007AFF;
+    --button: rgba(255, 255, 255, 0.25);
+    --button-active: rgba(255, 255, 255, 0.36);
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "APP_NAME": "BarTasks",
+  "APP_DESCRIPTION": "A simple, convenient task list in your menubar.",
+  "ADD_TASK_ACTION": "Add Task...",
+  "TASKS": "Tasks",
+  "COMPLETED_LIST_LABEL": "Completed",
+  "CLEAR_COMPLETED_ACTION": "Clear Completed",
+  "MARK_COMPLETE": "Mark As Complete",
+  "EDIT": "Edit",
+  "DELETE": "Delete",
+  "CLEAR_ALL_ACTION": "Clear All",
+  "PREFERENCES": "Preferences",
+  "LOGIN_ITEM": "Open at Login",
+  "CONTINUE_BUTTON": "Continue",
+  "TAB_GENERAL": "General",
+  "TAB_ADVANCED": "Advanced",
+  "SOUNDS": "Sounds",
+  "CLEAR_ALL": "Clear All",
+  "SHOW_COUNTER": "Display Task Counter",
+  "LEFT_CLICK": "Click to Complete Tasks",
+  "AUTO_CLEAR": "Automatically Clear Completed Tasks"
+}

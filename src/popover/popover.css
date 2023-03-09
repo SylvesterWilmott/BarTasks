@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  cursor: text;
+  height: 100vh;
+  width: 100vw;
+  zoom: 1;
+}
+
+.draggable {
+  -webkit-app-region: drag;
+}
+
+.not-draggable {
+  -webkit-app-region: no-drag;
+}
+
+.form {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  font-size: 24px;
+  padding: 0 16px;
+  height: 100vh;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--tertiary);
+}
+
+.button {
+  cursor: default;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: none;
+  line-height: 0;
+  height: 100vh;
+  flex: 0 0 52px;
+  opacity: 0;
+  user-select: none;
+}
+
+.button svg {
+  fill: var(--primary);
+}
