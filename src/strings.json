@@ -18,5 +18,9 @@
   "CLEAR_ALL": "Clear All",
   "SHOW_COUNTER": "Display Task Counter",
   "LEFT_CLICK": "Click to Complete Tasks",
-  "AUTO_CLEAR": "Automatically Clear Completed Tasks"
+  "AUTO_CLEAR": "Automatically Clear Completed Tasks",
+  "CLEAR_QUESTION_TITLE": "Are you sure you want to clear all tasks?",
+  "CLEAR_QUESTION_DETAIL": "This action will permanently delete all tasks and completed tasks. You cannot undo this action.",
+  "CLEAR_QUESTION_BUTTON_POSITIVE": "Clear All Tasks",
+  "CLEAR_QUESTION_BUTTON_NEGATIVE": "Cancel"
 }

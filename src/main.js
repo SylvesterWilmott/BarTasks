@@ -1,6 +1,6 @@
 'use strict'
 
-const { app, Menu, Tray, BrowserWindow, nativeImage, shell, systemPreferences, ipcMain } = require('electron')
+const { app, Menu, Tray, BrowserWindow, dialog, nativeImage, shell, systemPreferences, ipcMain } = require('electron')
 
 const path = require('path')
 const Store = require('electron-store')
@@ -293,12 +293,33 @@ function clearCompleted () {
 }
 
 // Clears all tasks and completed tasks
-function clearAll () {
-  const updatedTasks = []
-  const updatedCompleted = []
-  storage.set('tasks', updatedTasks) // update 'tasks' array in storage
-  storage.set('completed', updatedCompleted) // update 'completed' array in storage
-  if (storedData.pref_sounds === true) playSound()
+function clearAll (winId) {
+  if (storedData.tasks.length === 0 && storedData.completed.length === 0) return
+
+  let parentWindow = null
+  if (winId) parentWindow = BrowserWindow.fromId(winId)
+
+  dialog
+    .showMessageBox(parentWindow, {
+      message: strings.CLEAR_QUESTION_TITLE,
+      detail: strings.CLEAR_QUESTION_DETAIL,
+      buttons: [strings.CLEAR_QUESTION_BUTTON_POSITIVE, strings.CLEAR_QUESTION_BUTTON_NEGATIVE],
+      type: 'warning',
+      defaultId: 1,
+      cancelId: 1
+    })
+    .then((result) => {
+      if (result.response === 0) {
+        const updatedTasks = []
+        const updatedCompleted = []
+        storage.set('tasks', updatedTasks) // update 'tasks' array in storage
+        storage.set('completed', updatedCompleted) // update 'completed' array in storage
+        if (storedData.pref_sounds === true) playSound()
+      }
+    })
+    .catch((err) => {
+      console.log(err)
+    })
 }
 
 function registerListeners () {
@@ -333,7 +354,7 @@ function registerListeners () {
 
     switch (id) {
       case 'clear_all':
-        clearAll()
+        clearAll(e.sender.id)
         break
       case 'close_welcome_window':
         if (welcomeWin) {
