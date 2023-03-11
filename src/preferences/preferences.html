@@ -29,6 +29,31 @@
             <div class="section" data-section="General">
                 <div class="table-group">
                     <div class="table-row">
+                        <label class="row-label" data-string="SHOW_COUNTER"></label>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="pref_show_count">
+                            <div class="toggle-background"></div>
+                            <div class="toggle-inner-shadow"></div>
+                            <div class="toggle-knob"></div>
+                            <label for="pref_show_count"></label>
+                        </div>
+                    </div>
+                    <div class="table-row expandable">
+                        <div class="label-group">
+                            <label class="row-label" data-string="LEFT_CLICK"></label>
+                            <footer class="row-footer" data-string="LEFT_CLICK_FOOTER"></footer>
+                        </div>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="pref_left_click">
+                            <div class="toggle-background"></div>
+                            <div class="toggle-inner-shadow"></div>
+                            <div class="toggle-knob"></div>
+                            <label for="pref_left_click"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-group">
+                    <div class="table-row">
                         <label class="row-label" data-string="SOUNDS"></label>
                         <div class="toggle-container">
                             <input type="checkbox" id="pref_sounds">
@@ -52,19 +77,6 @@
             </div>
             <div class="section" data-section="Tasks">
                 <div class="table-group">
-                    <div class="table-row expandable">
-                        <div class="label-group">
-                            <label class="row-label" data-string="LEFT_CLICK"></label>
-                            <footer class="row-footer" data-string="LEFT_CLICK_FOOTER"></footer>
-                        </div>
-                        <div class="toggle-container">
-                            <input type="checkbox" id="pref_left_click">
-                            <div class="toggle-background"></div>
-                            <div class="toggle-inner-shadow"></div>
-                            <div class="toggle-knob"></div>
-                            <label for="pref_left_click"></label>
-                        </div>
-                    </div>
                     <div class="table-row">
                         <label class="row-label" data-string="AUTO_CLEAR"></label>
                         <div class="toggle-container">
@@ -75,20 +87,6 @@
                             <label for="pref_automatically_clear"></label>
                         </div>
                     </div>
-                </div>
-                <div class="table-group">
-                    <div class="table-row">
-                        <label class="row-label" data-string="SHOW_COUNTER"></label>
-                        <div class="toggle-container">
-                            <input type="checkbox" id="pref_show_count">
-                            <div class="toggle-background"></div>
-                            <div class="toggle-inner-shadow"></div>
-                            <div class="toggle-knob"></div>
-                            <label for="pref_show_count"></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="table-group">
                     <div class="table-row">
                         <label class="row-label" data-string="TASKS"></label>
                         <button id="clear_all" data-string="CLEAR_ALL"></button>
