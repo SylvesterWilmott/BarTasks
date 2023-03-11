@@ -18,6 +18,7 @@
   "CLEAR_ALL": "Clear All",
   "SHOW_COUNTER": "Show Task Count",
   "LEFT_CLICK": "Click to Complete Tasks",
+  "LEFT_CLICK_FOOTER": "When enabled, tasks can be edited with \"⌘+click\" and deleted with \"Shift+click\".",
   "AUTO_CLEAR": "Automatically Clear Completed Tasks",
   "CLEAR_QUESTION_TITLE": "Are you sure you want to clear all tasks?",
   "CLEAR_QUESTION_DETAIL": "This action will permanently delete all tasks and completed tasks. You cannot undo this action.",

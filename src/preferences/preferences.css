@@ -139,6 +139,21 @@ body {
   position: relative;
 }
 
+.expandable {
+  padding: 10px 10px;
+}
+
+.label-group {
+  max-width: 75%;
+}
+
+.row-footer {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary);
+  margin-top: 4px;
+}
+
 .table-row:after {
   content: "";
   position: absolute;
