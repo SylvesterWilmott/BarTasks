@@ -1,6 +1,6 @@
 # BarTasks
 
-BarTasks is a simple and convenient task list for macOS that sits in the menubar. It allows you to track a flat list of tasks without the hassle of opening and closing a separate application.
+A simple and convenient task list that sits in the menubar. Track a flat list of tasks without the hassle of opening and closing a separate application.
 
 ![Screenshot](./docs/assets/screenshot.png?raw=true)
 
