@@ -501,7 +501,7 @@ function showPreferencesWindow () {
 
   preferencesWin = new BrowserWindow({
     width: 400,
-    height: 228,
+    height: 274,
     vibrancy: 'window',
     titleBarStyle: 'hidden',
     fullscreenable: false,

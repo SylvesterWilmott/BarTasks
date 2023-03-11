@@ -126,6 +126,10 @@ body {
   box-shadow: inset 0px 0px 0.5px 0.5px var(--stroke-light);
 }
 
+.table-group + .table-group {
+  margin-top: 10px;
+}
+
 .table-row {
   min-height: 36px;
   display: flex;
